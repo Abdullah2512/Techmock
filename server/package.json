@@ -1,0 +1,34 @@
+{
+    "name": "techmock-server",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "description": "TechMock AI - Express application API",
+    "engines": {
+        "node": ">=20"
+    },
+    "scripts": {
+        "dev": "node --watch src/index.js",
+        "start": "node src/index.js",
+        "migrate": "node scripts/migrate.js",
+        "test": "vitest run"
+    },
+    "dependencies": {
+        "@google/genai": "^2.30.0",
+        "bcryptjs": "^3.0.3",
+        "cookie-parser": "^1.4.7",
+        "cors": "^2.8.6",
+        "dotenv": "^18.0.8",
+        "express": "^5.3.0",
+        "express-rate-limit": "^8.7.1",
+        "helmet": "^8.3.0",
+        "jsonwebtoken": "^9.0.3",
+        "pg": "^8.23.1",
+        "zod": "^4.6.7"
+    },
+    "devDependencies": {
+        "@electric-sql/pglite": "^0.5.10",
+        "supertest": "^7.3.1",
+        "vitest": "^5.0.5"
+    }
+}
